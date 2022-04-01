@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+
+// ### Primary
+$LightCyan: hsl(193, 38%, 86%);
+$NeonGreen: hsl(150, 100%, 66%);
+
+// ### Neutral
+$GrayishBlue: hsl(217, 19%, 38%);
+$DarkGrayishBlue: hsl(217, 19%, 24%);
+$DarkBlue: hsl(218, 23%, 16%);
+
+// ###Typography
+$font-family: 'Manrope', sans-serif;
+
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $DarkBlue;
+    padding: 0px 1rem;
+}
+
+
+.maincontainer{
+    max-width: 500px;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 0px 1.5rem;
+    background: $DarkGrayishBlue;
+    transition: 0.5s ease;
+    position: relative;
+
+    .advice{
+        text-transform: uppercase;
+        font-size: .9em;
+        text-align: center;
+        color: $NeonGreen;
+        font-family: $font-family;
+        letter-spacing: 2px;
+    }
+
+    .mainadvice{
+         margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        p{
+            font-size: clamp(1.1em ,5vw, 28px);
+            font-family: $font-family;
+            text-align: center;
+            font-weight: bold;
+            line-height: 1.5;
+            color: $LightCyan;
+            transition: 0.3s ease;
+
+        }
+    }
+
+    .line{
+        img{
+            width: 100%;
+        }
+    }
+
+    .dicearea{
+        background: $NeonGreen;
+        max-width: max-content;
+        padding: 1rem;
+        clip-path: circle();
+        transform: translateY(26px);
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-delay: 0.5s;
+        transition: 0.3s ease;
+
+       
+        img{
+            text-align: center;
+            transition: 0.5s ease; 
+        }
+
+        
+    
+    }
+}
+
+.toggler{
+    transform: rotate(360deg);
+}

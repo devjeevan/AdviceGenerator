@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1f2632;
+  padding: 0px 1rem;
+}
+
+.maincontainer {
+  max-width: 500px;
+  width: 100%;
+  cursor: pointer;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 0px 1.5rem;
+  background: #323a49;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  position: relative;
+}
+
+.maincontainer .advice {
+  text-transform: uppercase;
+  font-size: .9em;
+  text-align: center;
+  color: #52ffa8;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 2px;
+}
+
+.maincontainer .mainadvice {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.maincontainer .mainadvice p {
+  font-size: clamp(1.1em, 5vw, 28px);
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #cee3e9;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.maincontainer .line img {
+  width: 100%;
+}
+
+.maincontainer .dicearea {
+  background: #52ffa8;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 1rem;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  -webkit-transform: translateY(26px);
+          transform: translateY(26px);
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.maincontainer .dicearea img {
+  text-align: center;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.toggler {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+/*# sourceMappingURL=main.css.map */
